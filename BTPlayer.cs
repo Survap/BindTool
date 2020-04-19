@@ -2,6 +2,7 @@
 using System.Linq;
 using Terraria;
 using TShockAPI;
+using TShockAPI.DB;
 
 namespace BindTools
 {
@@ -17,9 +18,10 @@ namespace BindTools
 		public BTPlayer(int Index)
 		{
 			tsPlayer = TShock.Players[Index];
-            bindTools = (tsPlayer.User == null)
-                        ? new List<BindTool>()
-                        : BTDatabase.BTGet(tsPlayer.User.ID);
+			// fucking shit but i don't care how user or tsplayer becomes null
+			bindTools = (tsPlayer?.User is User user)
+						? BTDatabase.BTGet(user.ID)
+						: new List<BindTool>();
 			awaitingCommands = new List<string>();
 		}
 

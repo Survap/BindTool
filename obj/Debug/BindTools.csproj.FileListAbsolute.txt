@@ -8,3 +8,15 @@ C:\Users\Дарья\Source\Repos\BindTool\bin\Debug\TShockAPI.dll
 C:\Users\Дарья\Source\Repos\BindTool\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Дарья\Source\Repos\BindTool\obj\Debug\BindTools.dll
 C:\Users\Дарья\Source\Repos\BindTool\obj\Debug\BindTools.pdb
+D:\YandexDisk\Repos\BindTool\bin\Debug\BindTools.dll
+D:\YandexDisk\Repos\BindTool\bin\Debug\BindTools.pdb
+D:\YandexDisk\Repos\BindTool\bin\Debug\Mono.Data.Sqlite.dll
+D:\YandexDisk\Repos\BindTool\bin\Debug\MySql.Data.dll
+D:\YandexDisk\Repos\BindTool\bin\Debug\OTAPI.dll
+D:\YandexDisk\Repos\BindTool\bin\Debug\TerrariaServer.exe
+D:\YandexDisk\Repos\BindTool\bin\Debug\TShockAPI.dll
+D:\YandexDisk\Repos\BindTool\bin\Debug\Newtonsoft.Json.dll
+D:\YandexDisk\Repos\BindTool\obj\Debug\BindTools.csprojAssemblyReference.cache
+D:\YandexDisk\Repos\BindTool\obj\Debug\BindTools.csproj.CopyComplete
+D:\YandexDisk\Repos\BindTool\obj\Debug\BindTools.dll
+D:\YandexDisk\Repos\BindTool\obj\Debug\BindTools.pdb
