@@ -509,13 +509,13 @@ namespace BindTools
 			BTPlayer player = BTPlayers[args.PlayerId];
 			if ((player == null) || (player.tsPlayer == null)
 				|| ((player.bindTools.Count == 0) && (GlobalBinds.Count == 0))) return;
-			if ((args.Control & 32) == 32)
+			if (args.Control.IsUsingItem)
 			{
 				try
 				{
-					Item Selected = Main.player[args.PlayerId].inventory[args.Item];
-					var GB = BTExtensions.GetGlobalBind(Selected, args.Item);
-					var BT = player.GetBindTool(Selected, args.Item);
+					Item Selected = Main.player[args.PlayerId].inventory[args.SelectedItem];
+					var GB = BTExtensions.GetGlobalBind(Selected, args.SelectedItem);
+					var BT = player.GetBindTool(Selected, args.SelectedItem);
 
 					if ((GB.Name != null) && (player.tsPlayer.HasPermission(GB.Permission)) && (BT == null))
 					{ GB.DoCommand(player.tsPlayer); }

@@ -19,7 +19,7 @@ namespace BindTools
 		{
 			tsPlayer = TShock.Players[Index];
 			// fucking shit but i don't care how user or tsplayer becomes null
-			bindTools = (tsPlayer?.User is User user)
+			bindTools = (tsPlayer?.Account is UserAccount user)
 						? BTDatabase.BTGet(user.ID)
 						: new List<BindTool>();
 			awaitingCommands = new List<string>();
@@ -40,7 +40,7 @@ namespace BindTools
 				{
 					Removed.Add(PT);
 					if (Database && tsPlayer.IsLoggedIn)
-					{ BTDatabase.BTDelete(tsPlayer.User.ID, PT.item, PT.slot, PT.prefix); }
+					{ BTDatabase.BTDelete(tsPlayer.Account.ID, PT.item, PT.slot, PT.prefix); }
 				}
 			}
 			bindTools = (from BindTool b in bindTools
@@ -48,7 +48,7 @@ namespace BindTools
 						 select b).ToList();
 			bindTools.Add(NewBT);
 			if (Database && tsPlayer.IsLoggedIn)
-			{ BTDatabase.BTAdd(tsPlayer.User.ID, NewBT); }
+			{ BTDatabase.BTAdd(tsPlayer.Account.ID, NewBT); }
 		}
 		public BindTool GetBindTool(Item item, int Slot)
 		{
@@ -64,7 +64,7 @@ namespace BindTools
 			if ((slot == -1) && (prefix == -1))
 			{
 				if (tsPlayer.IsLoggedIn)
-				{ BTDatabase.BTDelete(tsPlayer.User.ID, item); }
+				{ BTDatabase.BTDelete(tsPlayer.Account.ID, item); }
 				bindTools = (from BindTool b in bindTools
 								where (b.item != item)
 								select b).ToList();
@@ -72,7 +72,7 @@ namespace BindTools
 			else if (slot == -1)
 			{
 				if (tsPlayer.IsLoggedIn)
-				{ BTDatabase.BTDelete(tsPlayer.User.ID, item, slot); }
+				{ BTDatabase.BTDelete(tsPlayer.Account.ID, item, slot); }
 				bindTools = (from BindTool b in bindTools
 							 where !((b.item == item)
 								 && (b.prefix == prefix))
@@ -81,7 +81,7 @@ namespace BindTools
 			else if (prefix == -1)
 			{
 				if (tsPlayer.IsLoggedIn)
-				{ BTDatabase.BTDelete(tsPlayer.User.ID, item, prefix, false); }
+				{ BTDatabase.BTDelete(tsPlayer.Account.ID, item, prefix, false); }
 				bindTools = (from BindTool b in bindTools
 							 where !((b.item == item)
 								 && (b.prefix == prefix))
@@ -90,7 +90,7 @@ namespace BindTools
 			else
 			{
 				if (tsPlayer.IsLoggedIn)
-				{ BTDatabase.BTDelete(tsPlayer.User.ID, item, slot, prefix); }
+				{ BTDatabase.BTDelete(tsPlayer.Account.ID, item, slot, prefix); }
 				bindTools = (from BindTool b in bindTools
 							 where !((b.item == item)
 								 && (b.slot == slot)
