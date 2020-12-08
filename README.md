@@ -1,6 +1,8 @@
 # BindTool
 
-An update on InanZen's AdminTools BindTool command. Modified by Tsviets.
+An update on InanZen's AdminTools BindTool command. 
+
+Modified by Tsviets.
 
 ----------- DIFFERENCES IN THIS VERSION -----------
 
