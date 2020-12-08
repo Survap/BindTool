@@ -11,7 +11,7 @@ An update on InanZen's AdminTools BindTool command.
   - This will allow them to use /heal only when using specified item.
   - You can set a permission name upon using /bgl to allow/disallow usage for certain groups.
 
-2. Using [Player] token will replace this with the name.
+2. Using [Player] token will let you add commands that automatically replace this token with the player's username.
 -- EXAMPLE:
   - You want players to get kicked when using some item.
   - However, you need to input /kick <Username> for it to work.
