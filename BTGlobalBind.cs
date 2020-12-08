@@ -48,7 +48,7 @@ namespace BindTools
 		public void DoCommand(TSPlayer player)
 		{
 			Group currentGroup = player.Group;
-				player.Group = new SuperAdminGroup();
+
 			try
 			{
 				if (Looping)
@@ -57,11 +57,14 @@ namespace BindTools
 					{ Count[player.Index] = 0; }
 					if (Awaiting)
 					{
+						player.Group = new SuperAdminGroup();
 						BindTools.BTPlayers[player.Index].AddCommand(Commands[Count[player.Index]].Replace("[Player]", player.Name));
 						player.SendInfoMessage("Command {0} added in queue! Use '{1}bindwait' or '{1}bw' to see current awaiting command.", Commands[Count[player.Index]], TShock.Config.CommandSpecifier);
 						player.Group = currentGroup;
 					}
-					else { TShockAPI.Commands.HandleCommand(player, Commands[Count[player.Index]].Replace("[Player]", player.Name)); 
+					else {
+					player.Group = new SuperAdminGroup();
+					TShockAPI.Commands.HandleCommand(player, Commands[Count[player.Index]].Replace("[Player]", player.Name)); 
 					player.Group = currentGroup;
 					}
 					Count[player.Index]++;
@@ -72,11 +75,14 @@ namespace BindTools
 					{
 						if (Awaiting)
 						{
+							player.Group = new SuperAdminGroup();
 							BindTools.BTPlayers[player.Index].AddCommand(cmd.Replace("[Player]", player.Name));
 							player.SendInfoMessage("Command {0} added in queue! Use '{1}bindwait' or '{1}bw' to see current awaiting command.", Commands[Count[player.Index]], TShock.Config.CommandSpecifier);
 							player.Group = currentGroup;
 						}
-						else { TShockAPI.Commands.HandleCommand(player, cmd.Replace("[Player]", player.Name));
+						else {
+						player.Group = new SuperAdminGroup();
+						TShockAPI.Commands.HandleCommand(player, cmd.Replace("[Player]", player.Name));
 						player.Group = currentGroup;
 						}
 					}
