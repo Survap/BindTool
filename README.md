@@ -16,7 +16,7 @@ An update on InanZen's AdminTools BindTool command.
 
 -- EXAMPLE:
   - You want players to get kicked when using some item.
-  - However, you need to input /kick "<Username>" for it to work.
+  - However, you need to input /kick "Username" for it to work.
   - Now, when using [Player], the command will automatically assume it has to be replaced with the username of the player using the item.
 
 
