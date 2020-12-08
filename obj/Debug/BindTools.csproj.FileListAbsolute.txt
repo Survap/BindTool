@@ -20,3 +20,16 @@ D:\YandexDisk\Repos\BindTool\obj\Debug\BindTools.csprojAssemblyReference.cache
 D:\YandexDisk\Repos\BindTool\obj\Debug\BindTools.csproj.CopyComplete
 D:\YandexDisk\Repos\BindTool\obj\Debug\BindTools.dll
 D:\YandexDisk\Repos\BindTool\obj\Debug\BindTools.pdb
+C:\Users\92MBIT\Source\Repos\Survap\BindTool\bin\Debug\BindTools.dll
+C:\Users\92MBIT\Source\Repos\Survap\BindTool\bin\Debug\BindTools.pdb
+C:\Users\92MBIT\Source\Repos\Survap\BindTool\bin\Debug\Mono.Data.Sqlite.dll
+C:\Users\92MBIT\Source\Repos\Survap\BindTool\bin\Debug\MySql.Data.dll
+C:\Users\92MBIT\Source\Repos\Survap\BindTool\bin\Debug\OTAPI.dll
+C:\Users\92MBIT\Source\Repos\Survap\BindTool\bin\Debug\TerrariaServer.exe
+C:\Users\92MBIT\Source\Repos\Survap\BindTool\bin\Debug\TShockAPI.dll
+C:\Users\92MBIT\Source\Repos\Survap\BindTool\bin\Debug\Newtonsoft.Json.dll
+C:\Users\92MBIT\Source\Repos\Survap\BindTool\obj\Debug\BindTools.csprojAssemblyReference.cache
+C:\Users\92MBIT\Source\Repos\Survap\BindTool\obj\Debug\BindTools.csproj.CoreCompileInputs.cache
+C:\Users\92MBIT\Source\Repos\Survap\BindTool\obj\Debug\BindTools.csproj.CopyComplete
+C:\Users\92MBIT\Source\Repos\Survap\BindTool\obj\Debug\BindTools.dll
+C:\Users\92MBIT\Source\Repos\Survap\BindTool\obj\Debug\BindTools.pdb
